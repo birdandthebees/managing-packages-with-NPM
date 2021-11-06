@@ -1,5 +1,5 @@
 {
-	"author":"Davith",
+	"author": "Davith",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
@@ -7,6 +7,9 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
+	},
+	"engines": {
+		"node": "14.17.3"
 	},
 	"repository": {
 		"type": "git",
