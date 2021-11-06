@@ -1,5 +1,6 @@
 {
 	"author": "Davith",
+	"description": "A web app that teaches people the ability to make meaningful contributions to software projects",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
