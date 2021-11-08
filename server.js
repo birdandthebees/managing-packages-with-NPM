@@ -63,7 +63,7 @@ if (!process.env.DISABLE_XORIGIN) {
 //Listen on port set in environment variable or default to 3000
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/views / index.html");
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 var port = process.env.PORT || 3000;
