@@ -3,7 +3,7 @@ var app = express();
 var bGround = require("fcc-express-bground");
 require("dotenv").config();
 
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
   console.log(req.method + " " + req.path + " -npm start " + req.ip);
   next();
 });
@@ -46,7 +46,7 @@ app.get(
   }
 );
 
-app.get("/:word/echo", function (req, res) {
+app.get("/:word/echo", (req, res) => {
   res.json({ echo: req.params.word });
 });
 
