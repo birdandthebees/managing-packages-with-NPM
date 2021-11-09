@@ -3,6 +3,11 @@ var app = express();
 var bGround = require("fcc-express-bground");
 require("dotenv").config();
 
+app.use((req, res, next) => {
+  console.log(req.method + " ", req.path + "-", req.ip);
+  next();
+});
+
 bGround.log("Hello World");
 console.log("Hello World ");
 
